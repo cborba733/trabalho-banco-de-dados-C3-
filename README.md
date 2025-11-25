@@ -58,33 +58,40 @@ src/
 │   └── mongo_connection.py
 │
 ├── migrate/
-│   └── migrate_all.py     ← (NOVIDADE)
+│   └── migrate_all.py
 │
 ├── reports/
 │   ├── relatorio_total_pedidos_por_cliente.py
 │   └── relatorio_itens_com_cliente_produto.py
 │
 ├── main.py
-├── diagrama.pdf           ← (Exigência do edital)
-└── (venv/)                ← (não enviado ao GitHub)
+├── diagrama.pdf 
+└── (venv/)
 ✔ A pasta migrate/ agora faz parte oficial da entrega
 ✔ O arquivo migrate_all.py realiza a migração C2 → C3 (PostgreSQL → MongoDB)
 
 ⚙️ Como Executar o Sistema
+
 1️⃣ Criar ambiente virtual
 python3 -m venv venv
+
 2️⃣ Ativar ambiente
 source venv/bin/activate
+
 3️⃣ Instalar dependências
 pip install pymongo psycopg2-binary
+
 4️⃣ Iniciar o MongoDB
 sudo systemctl start mongod
+
 5️⃣ Executar o sistema
 python3 main.py
+
 🔄 Migração do C2 (PostgreSQL) → C3 (MongoDB)
 A pasta /migrate contém o arquivo:
 
 migrate_all.py
+
 Ele migra:
 
 clientes
@@ -101,7 +108,7 @@ Para rodar a migração:
 cd ~/C3/src/migrate
 python3 migrate_all.py
 
-📊 Relatórios Implementados (conforme edital)
+📊 Relatórios Implementados
 
 1 – Total de pedidos por cliente (Agrupamento)
 Exibe:
@@ -127,12 +134,13 @@ Subtotal
 
 ID do pedido
 
-📐 Diagrama (Exigência do Edital)
+📐 Diagrama 
 
 O diagrama relacional utilizado como base está em:
 
 
 /C3/src/diagrama.pdf
+
 ✔️ Conclusão
 Este projeto atende 100% das exigências do C3, incluindo:
 
