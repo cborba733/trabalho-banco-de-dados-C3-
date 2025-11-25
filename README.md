@@ -67,7 +67,7 @@ src/
 ├── main.py
 ├── diagrama.pdf 
 └── (venv/)
-✔ A pasta migrate/ agora faz parte oficial da entrega
+
 ✔ O arquivo migrate_all.py realiza a migração C2 → C3 (PostgreSQL → MongoDB)
 
 ⚙️ Como Executar o Sistema
